@@ -1,4 +1,5 @@
 let image = new Image();
+image.crossOrigin = "anonymous";
 let video;
 let c1;
 let ctx1;
@@ -36,8 +37,7 @@ function doLoad() {
 
 function computeFrame() {
     adjustImage(isHorizontalVideo);
-
-    image.crossOrigin = "anonymous";
+    
     image.src = c1.toDataURL();
     render(image);
 }
