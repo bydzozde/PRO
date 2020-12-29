@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Semestralka PRO</title>
-    <link type="text/css" href="style/semestralka.css" rel="stylesheet" />
+    <title>WebGL filtry</title>
+    <link type="text/css" href="style/main.css" rel="stylesheet" />
 </head>
 <body>
 
-<video id="video" src="video/obraz-vertical-short.mp4" controls="controls" width="640" height="480"></video>
-<!-- <video id="video" src="http://media.w3.org/2010/05/sintel/trailer.mp4" controls="controls" width="640" height="480"></video>     -->
-<!-- <video id="video" src="video/bazen_vroubenka.mp4" controls="controls" width="640" height="480"></video> -->
-<!--<video id="my-video" src="video/obraz-PRO-vertical.mp4" controls="controls" width="640" height="480"></video>-->
-<!--<video id="my-video" src="video/obraz-PRO-horizontal.mp4" controls="controls" width="640" height="480"></video>-->
+<video id="video" src="video/vroubenka.mp4" controls="controls" width="640" height="480"></video>
 
 <canvas id="aux-canvas" width="640" height="480" style="display: none"></canvas>
 
 <canvas id="canvas" width="640" height="480"></canvas>
 
-<div id="effectsMenu"></div>
+<div id="effectsMenu">
+    Filtry
+    <hr/>
+</div>
 
 </body>
 
-<script src="script/videoFrames.js" defer></script>
-<script src="script/semestralka.js" defer></script>
+<script src="script/processVideo.js" defer></script>
+<script src="script/WebGLFilters.js" defer></script>
 
 </html>
